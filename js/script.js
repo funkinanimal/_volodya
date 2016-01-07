@@ -59,3 +59,30 @@ function f2(form)
 	cr = eval(form.Cr.value);
 	form.Ce.value = (c + 2*s + p/3 + (si-0.4)/4 + (mn-0.8)/8 + ni/8 + cu/10 + (cr-0.8)/10;
 }
+function af64(form)
+{
+	i = eval(form.ips.value);
+	f = eval(form.fi.value);
+	l = eval(form.la.value);
+	tm = eval(form.tm.value);
+	tn = eval(form.tnull.value);
+	q = eval(form.q.value);
+	v = eval(form.V.value);	
+	form.Ce.value = -(i/f) * (6.28 * l * Math.pow((tm-tn),2))/(q/v);
+}
+function af65(form)
+{
+	f = eval(form.f.value);	
+	form.Ce.value = 0.145 + 2.718*(-((1/f)-0.39));
+}
+function af66(form)
+{
+	q = eval(form.a.value);
+	v = eval(form.b.value);
+	d = eval(form.c.value);
+	c = eval(form.d.value);
+	g = eval(form.e.value);
+	tm = eval(form.f.value);
+	tn = eval(form.g.value);	
+	form.Ce.value = (2*q/v)/(3.14*Math.pow(d,2)*c*g*(tm-tn));
+}
