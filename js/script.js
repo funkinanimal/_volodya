@@ -146,3 +146,31 @@ function af75(form)
 	to = eval(form.d.value);		
 	form.Ce.value = tn+tz+tv+to;
 }
+function af78(form)
+{
+	m = eval(form.a.value);
+	a = eval(form.b.value);
+	i = eval(form.c.value);			
+	form.Ce.value = m*a*i;
+
+function af79(form)
+{
+	m = eval(form.a.value);
+	a = eval(form.b.value);
+				
+	form.Ce.value = m*a;
+}
+function af80(form)
+{
+	m = eval(form.a.value);
+	a = eval(form.b.value);
+				
+	form.Ce.value = (m+1)*a;
+}
+function af81(form)
+{
+	m = eval(form.a.value);
+	a = eval(form.b.value);
+				
+	form.Ce.value = m*a;
+}
