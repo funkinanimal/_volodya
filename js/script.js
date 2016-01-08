@@ -125,3 +125,24 @@ function af71(form)
 	i = eval(form.c.value);			
 	form.Ce.value = m/(a*i);
 }
+function af72(form)
+{
+	m = eval(form.a.value);
+	a = eval(form.b.value);
+	i = eval(form.c.value);			
+	form.Ce.value = m*a*i;
+}
+function af73(form)
+{
+	a = eval(form.b.value);
+	i = eval(form.c.value);			
+	form.Ce.value = i/a;
+}
+function af75(form)
+{
+	tn = eval(form.a.value);
+	tz = eval(form.b.value);
+	tv = eval(form.c.value);
+	to = eval(form.d.value);		
+	form.Ce.value = tn+tz+tv+to;
+}
