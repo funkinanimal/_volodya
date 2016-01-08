@@ -174,3 +174,47 @@ function af81(form)
 				
 	form.Ce.value = m*a;
 }
+function af84(form)
+{	
+	a = eval(form.b.value);
+				
+	form.Ce.value = 1.5*a;
+}
+function af85(form)
+{
+	m = eval(form.a.value);
+	a = eval(form.b.value);
+				
+	form.Ce.value = m*a;
+}
+function af86(form)
+{
+	tn = eval(form.a.value);
+	tz = eval(form.b.value);
+	tv = eval(form.c.value);
+	to = eval(form.d.value);
+	ro = eval(form.d.value);		
+	form.Ce.value = (tn*tv+tz*to)*ro;
+}
+function af87(form)
+{
+	m = eval(form.a.value);
+	a = eval(form.b.value);
+				
+	form.Ce.value = (m*a)/60;
+}
+function af88(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+			
+	form.Ce.value = a/(b*c);
+}
+function af89(form)
+{
+	m = eval(form.a.value);
+	a = eval(form.b.value);
+				
+	form.Ce.value = m*a;
+}
