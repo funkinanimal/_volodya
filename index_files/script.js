@@ -520,3 +520,106 @@ function af101(form)
 					
 	form.Ce.value = a*b*c;
 }
+
+////////////
+
+
+function f653(form)
+{
+	e = eval(form.e653.value);
+	q = eval(form.q653.value);
+	S = eval(form.S653.value);
+	b = eval(form.b653.value);
+	form.As653.value = (0.75*e*q + S*b);
+}
+
+function f652(form)
+{
+	an = eval(form.an652.value);
+	I = eval(form.I652.value);
+	n = eval(form.n652.value);
+	d = eval(form.d652.value);
+	y = eval(form.y652.value);
+	form.Vpod652.value = ((4*an*I)/(n*(d*d)*y));
+}
+
+function f651(form)
+{
+	K = eval(form.K651.value);
+	f = eval(form.f651.value);
+	q = eval(form.q651.value);
+	form.Aw651.value = (((K*(f*f))/2) + (1.05*(K*f)*q));
+}
+
+function f650(form)
+{
+	an = eval(form.an650.value);
+	I = eval(form.I650.value);
+	y = eval(form.y650.value);
+	Aw = eval(form.Aw650.value);
+	form.Vsv650.value = ((an*I)/(y*Aw));
+}
+
+function f646(form)
+{
+	A = eval(form.A646.value);
+	b = eval(form.b646.value);
+	S = eval(form.S646.value);
+	n = eval(form.n646.value);
+	form.Aw646.value = ((b*Math.pow(n, A))*(S*(Math.pow(n, A)))); 
+}
+
+function f644(form)
+{
+	M = eval(form.M644.value);
+	Mst = eval(form.Mst644.value);
+	P = eval(form.P644.value);
+	h = eval(form.h644.value);
+	form.N644.value = ((Math.pow(M, P) - Mst)/h);
+}
+
+function f642(form)
+{
+	Sst = eval(form.Sst642.value);
+	hst = eval(form.hst642.value);
+	form.Wst642.value = ((Sst*Math.pow(hst, 2))/6);
+}
+
+function f638(form)
+{
+	Sst = eval(form.Sst638.value);
+	hst = eval(form.hst638.value);
+	form.Ist638.value = ((Sst*Math.pow(hst, 3))/12);
+}
+
+function f640(form)
+{
+	Sst = eval(form.Sst640.value);
+	hst = eval(form.hst640.value);
+	form.Sx640.value = ((Sst*Math.pow(hst, 2))/8);
+}
+
+function f637(form)
+{
+	M = eval(form.M637.value);
+	P = eval(form.P637.value);
+	Ist = eval(form.Ist637.value);
+	Ix = eval(form.Ix637.value);
+	form.Mst637.value = (Math.pow(M, P)*(Ist/Ix));
+}
+
+function f641(form)
+{
+	Mst = eval(form.Mst641.value);
+	Wst = eval(form.Wst641.value);
+	form.Sig641.value = (Mst/Wst);
+}
+
+function f645(form)
+{
+	N = eval(form.N645.value);
+	Aw = eval(form.Aw645.value);
+	form.Sig645.value = (N/Aw);
+}
+
+//////////
