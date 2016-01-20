@@ -1,4 +1,4 @@
-$(function () {
+ $(function () {
 	//script for popups
 	$('a.show_popup').click(function () {
 		$('div.'+$(this).attr("rel")).fadeIn(500);
@@ -849,11 +849,295 @@ function af101(form)
 {
 	a = eval(form.a.value);
 	b = eval(form.b.value);
-	с = eval(form.c.value);
+	c = eval(form.c.value);
 					
-	form.Ce.value = a*b*c;
+	form.Ce.value = (a*b)*c;
 }
 
+function af102(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+					
+	form.Ce.value = (a*b)*3600;
+}
+function af104(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+					
+	form.Ce.value = b*(Math.pow(a,(1/3)));
+}
+
+function af105(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	d = eval(form.d.value);
+					
+	form.Ce.value = (a*b)/(c*d);
+}
+function af106(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	
+					
+	form.Ce.value = (a*b)/(c*(a+b));
+}
+function af107(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	
+					
+	form.Ce.value = (a/350)*(35*b + c);
+}
+function af108(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	d = eval(form.d.value);
+					
+	form.Ce.value = (a/2*Math.PI*b)*(Math.log(2*b/c)+(Math.log((4*d+b)*(4*d-b)))/2) ;
+}
+function af109(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	d = eval(form.d.value);
+					
+	form.Ce.value = (a/2*Math.PI*b)*(Math.log(2*Math.pow(b,2))/(c*d));
+}
+function af110(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);	
+					
+	form.Ce.value = a/(b*c);
+}
+function af111(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);	
+					
+	form.Ce.value = a/(b*c);
+}
+function af112(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	d = eval(form.d.value);
+					
+	form.Ce.value = (a/2*Math.PI*b)*(Math.log(2*Math.pow(b,2))/(c*d));
+}
+function af113(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	d = eval(form.d.value);
+	e = eval(form.e.value);
+					
+	form.Ce.value = (a*b)/(a*c +b*d*e);
+}
+function af114(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	
+					
+	form.Ce.value = a+b+c;
+}
+function af115(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	d = eval(form.d.value);
+	e = eval(form.e.value);
+	
+					
+	form.Ce.value = (a*c + b*d)*e;
+}
+function af116(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	e = eval(form.e.value);
+	
+					
+	form.Ce.value = a*c*b*e;
+}
+function af117(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);	
+					
+	form.Ce.value = a+b;
+}
+function af118(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);	
+					
+	form.Ce.value = a*b;
+}
+
+function af119(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);	
+	c = eval(form.c.value);
+	d = eval(form.d.value);
+					
+	form.Ce.value = (a*b)/(c*d);
+}
+function af120(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);	
+					
+	form.Ce.value = a+b;
+}
+function af121(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);	
+					
+	form.Ce.value = a*b +c;
+}
+function af122(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);	
+					
+	form.Ce.value = a*b*c/60;
+}
+function af124(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+					
+	form.Ce.value = a*b;
+}
+function af125(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+					
+	form.Ce.value = a*b/100;
+}
+function af126(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+					
+	form.Ce.value = a*b/100;
+}
+function af127(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+					
+	form.Ce.value = a*b/100;
+}
+function af128(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	d = eval(form.d.value);
+	e = eval(form.e.value);
+	f = eval(form.f.value);
+	g = eval(form.g.value);
+	h = eval(form.h.value);
+
+					
+	form.Ce.value = a+b+c+d+e+f+g+h;
+}
+function af129(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+					
+	form.Ce.value = a*b/100;
+}
+function af130(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+					
+	form.Ce.value = a*b/100;
+}
+function af131(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+					
+	form.Ce.value = a+b+c;
+}
+function af132(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+					
+	form.Ce.value = a*b/100;
+}
+function af133(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+					
+	form.Ce.value = a*(b+c)/100;
+}
+function af134(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	
+					
+	form.Ce.value = a-b;
+}
+function af135(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	
+					
+	form.Ce.value = ((a-b)/b)*100;
+}
+function af136(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	c = eval(form.c.value);
+	
+					
+	form.Ce.value = (b-a)*c;
+}
+function af137(form)
+{
+	a = eval(form.a.value);
+	b = eval(form.b.value);
+	
+					
+	form.Ce.value = a/b;
+}
 ////////////
 
 
