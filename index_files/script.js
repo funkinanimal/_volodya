@@ -13,6 +13,68 @@ $(function () {
 	});	
 });	
 
+function f01(form)
+{
+	c = eval(form.C.value);
+	s = eval(form.S.value);
+	p = eval(form.P.value);
+	si = eval(form.Si.value);
+	ni = eval(form.Ni.value);
+	mn = eval(form.Mn.value);
+	cr = eval(form.Cr.value);
+	mo = eval(form.Mo.value);
+	v = eval(form.V.value);
+	form.HCS.value = (c*(s+p+0.04*si+0.01*ni)*1000)/(3*mn+cr+mo+v);
+}
+
+function f02(form)
+{
+	c = eval(form.C.value);
+	s = eval(form.S.value);
+	p = eval(form.P.value);
+	nb = eval(form.Nb.value);
+	si = eval(form.Si.value);
+	mn = eval(form.Mn.value);
+	form.UCS.value = 230*c+190*s+75*p+45*nb-12.3*si-5.4*mn-1;
+}
+
+function f03(form)
+{
+	c = eval(form.C.value);
+	s = eval(form.S.value);
+	si = eval(form.Si.value);
+	mo = eval(form.Mo.value);
+	mn = eval(form.Mn.value);
+	form.V.value = 19-42*c-411*s-3.3*si+5.6*mn+6.7*mo;
+}
+
+function f04(form)
+{
+	cr = eval(form.Cr.value);
+	mo = eval(form.Mo.value);
+	si = eval(form.Si.value);
+	nb = eval(form.Nb.value);
+	ti = eval(form.Ti.value);
+	ni = eval(form.Ni.value);
+	mn = eval(form.Mn.value);
+	c = eval(form.C.value);
+	n = eval(form.N.value);
+	cu = eval(form.Cu.value);
+
+	form.CN.value = (cr+1.37*mo+1.5*si+2*nb+3*ti)/(ni+0.31*mn+22*c+14.2*n+cu);
+}
+
+function f05(form)
+{
+	c = eval(form.C.value);
+	ni = eval(form.Ni.value);
+	nb = eval(form.Nb.value);
+	d = eval(form.D.value);
+	fe = eval(form.Fe.value);
+	form.L.value = 299*c+8*ni+142*nb-5.5*Math.pow((d-fe), 2);
+}
+
+
 function f1(form)
 {
 	c = eval(form.C.value);
@@ -250,6 +312,285 @@ function f30(form)
 	form.V.value = (4*a*i)/(y*Math.PI * Math.pow(d, 2));
 }
 
+function f31a(form)
+{
+	k = eval(form.K.value);
+	q = eval(form.Q.value);
+	form.A.value = Math.pow(k, 2)/2 + 1.05*k*q;
+}
+
+function f31b(form)
+{
+	k = eval(form.K.value);
+	form.Q.value = 0.3*k;
+}
+
+function f32(form)
+{
+	d = eval(form.D.value);
+	p = eval(form.P.value);
+	form.I.value = Math.PI * Math.pow(d, 2) * p / 4;
+}
+
+function f33(form)
+{
+	q = eval(form.Q.value);
+	c = eval(form.C.value);
+	b = eval(form.B.value);
+	v = eval(form.V.value);
+	y = eval(form.Y.value);
+	form.T.value = (0.242*q)/(v*c*b*y);
+}
+
+function f34(form)
+{
+	q = eval(form.Q.value);
+	n = eval(form.N.value);
+	form.QU.value = q*n;
+}
+
+function f35(form)
+{
+	e = eval(form.e.value);
+	d = eval(form.d.value);
+	form.Y.value = e/2+d;
+}
+
+function f36(form)
+{
+	q = eval(form.Q.value);
+	c = eval(form.C.value);
+	b = eval(form.B.value);
+	v = eval(form.V.value);
+	t = eval(form.T.value);
+	form.E.value = (0.484*q)/(v*c*b*t);
+}
+
+function f37(form)
+{
+	y = eval(form.Y.value);
+	a = eval(form.A.value);
+	form.T.value = Math.pow(y, 2)/(2*a);
+}
+
+function f38(form)
+{
+	q = eval(form.Q.value);
+	c = eval(form.C.value);
+	b = eval(form.B.value);
+	v = eval(form.V.value);
+	t = eval(form.T.value);
+	a = eval(form.A.value);
+	y = eval(form.Y.value);
+	e = eval(form.E.value);
+	st = -(Math.pow(y,2)/(4*a*t));
+	form.TT.value = (q*Math.pow(e, st))/(v*c*b*Math.sqrt(4*Math.PI*a*t));
+}
+
+function f39(form)
+{
+	q = eval(form.Q.value);
+	c = eval(form.C.value);
+	v = eval(form.V.value);
+	y = eval(form.Y.value);
+	form.T.value = (0.234*q)/(v*c*Math.pow(y,2));
+}
+
+function f40(form)
+{
+	y = eval(form.Y.value);
+	a = eval(form.A.value);
+	form.T.value = Math.pow(y, 2)/(4*a);
+}
+
+function f41(form)
+{
+	q = eval(form.Q.value);
+	c = eval(form.C.value);
+	b = eval(form.B.value);
+	v = eval(form.V.value);
+	t = eval(form.T.value);
+	arg = (0.936*q)/(v*c*b*t);
+	form.E.value = Math.sqrt(arg);
+}
+
+function f42(form)
+{
+	q = eval(form.Q.value);
+	l = eval(form.L.value);
+	a = eval(form.A.value);
+	t = eval(form.T.value);
+	y = eval(form.Y.value);
+	v = eval(form.V.value);
+	e = eval(form.E.value);
+	st = -(Math.pow(y, 2)/(4*a*t))
+	form.TT.value = (q*Math.pow(e, st))/(2*Math.PI*l*v*t);
+}
+
+function f43(form)
+{
+	q = eval(form.Q.value);
+	l = eval(form.L.value);
+	c = eval(form.C.value);
+	v = eval(form.V.value);
+	b = eval(form.B.value);
+	t = eval(form.T.value);
+	form.TT.value = Math.pow(q, 2)/(4*Math.PI*l*c*Math.pow(v*b, 2)*Math.pow(t, 2));
+}
+
+function f44(form)
+{
+	v = eval(form.V.value);
+	t = eval(form.T.value);
+	form.L.value = v*t;
+}
+
+function f46(form)
+{
+	l = eval(form.L.value);
+	e = eval(form.E.value);
+	form.K.value = l/e;
+}
+
+function f47(form)
+{
+	k = eval(form.K.value);
+	i = eval(form.I.value);
+	form.A.value = k*i;
+}
+
+function f48(form)
+{
+	d = eval(form.D.value);
+	i = eval(form.I.value);
+	form.A.value = (i*(1.75-0.15*d))/75;
+}
+
+function f49(form)
+{
+	a = eval(form.A.value);
+	e = eval(form.E.value);
+	form.K.value = a/e;
+}
+
+function f50(form)
+{
+	e = eval(form.E.value);
+	a = eval(form.A.value);
+	form.K.value = e/a;
+}
+
+function f51(form)
+{
+	q = eval(form.Q.value);
+	v = eval(form.V.value);
+	n = eval(form.N.value);
+	s = eval(form.S.value);
+	form.F.value = (q*n)/(v*s);
+}
+
+function f52(form)
+{
+	q = eval(form.Q.value);
+	a = eval(form.A.value);
+	b = eval(form.B.value);
+	s = eval(form.S.value);
+	e = q/(a*b*s);
+	form.N.value = Math.exp(-5.9494/Math.exp(e)-1.6737/e-710.14*Math.pow(10, -3));
+}
+
+function f53(form)
+{
+	q = eval(form.Q.value);
+	l = eval(form.L.value);
+	v = eval(form.V.value);
+	t = eval(form.T.value);
+	form.TT.value = q/(2*Math.PI*l*v*t);
+}
+
+function f54(form)
+{
+	q = eval(form.Q.value);
+	c = eval(form.C.value);
+	b = eval(form.B.value);
+	v = eval(form.V.value);
+	t = eval(form.T.value);
+	form.E.value = Math.sqrt((0.936*q)/(v*c*b*t));
+}
+
+function f56(form)
+{
+	q = eval(form.Q.value);
+	a = eval(form.A.value);
+	v = eval(form.V.value);
+	s = eval(form.S.value);
+	form.E.value = (q*v)/(Math.pow(a, 2)*s);
+}
+
+function f57(form)
+{
+	f = eval(form.F.value);
+	v = eval(form.V.value);
+	s = eval(form.S.value);
+	q = eval(form.Q.value);
+	form.N.value = (f*v*s)/q;
+}
+
+function f58(form)
+{
+	t = eval(form.T.value);
+	n = eval(form.N.value);
+	form.P.value = t*n;
+}
+
+function f59(form)
+{
+	p = eval(form.P.value);
+	n = eval(form.N.value);
+	form.S.value = n+p;
+}
+
+function f60(form)
+{
+	l = eval(form.L.value);
+	c = eval(form.C.value);
+	m = eval(form.M.value);
+	o = eval(form.O.value);
+	q = eval(form.Q.value);
+	v = eval(form.V.value);
+	b = eval(form.B.value);
+	form.W.value = (-2*Math.PI*l*c*Math.pow((m-o), 3))/Math.pow((q/(v*b)), 2);
+}
+
+function f61(form)
+{
+	f = eval(form.F.value);
+	q = eval(form.Q.value);
+	v = eval(form.V.value);
+	b = eval(form.B.value);
+	l = eval(form.L.value);
+	c = eval(form.C.value);
+	m = eval(form.M.value);
+	o = eval(form.O.value);
+	
+	form.T.value = (f*Math.pow((q/(v*b)), 2))/(l*c*Math.pow((m-o), 2));
+}
+
+function f62(form)
+{
+	t = eval(form.T.value);
+	m = eval(form.M.value);
+	o = eval(form.O.value);
+	
+	form.Z.value = (t-o)/(m-o);
+}
+
+function f63(form)
+{
+	t = eval(form.T.value);
+	form.F.value = 1/(13.4*Math.pow(t, 2) - 0.089*t);
+}
+
 //
 
 function af64(form)
@@ -419,9 +760,9 @@ function af88(form)
 {
 	a = eval(form.a.value);
 	b = eval(form.b.value);
-	c = eval(form.c.value);
+	d = eval(form.D.value);
 			
-	form.Ce.value = a/(b*c);
+	form.E.value = a/(b*d);
 }
 
 function af89(form)
