@@ -930,4 +930,182 @@ function vf643(form)
 	num = ((s*s)+3*(t*t));
 	form.sp643.value = (Math.pow(num, 0.5));
 }
+
+function f6510(form)
+{
+	k = eval(form.K6510.value);
+	form.q6510.value = (0.3*k);
+}
+
+function f647(form)
+{
+	gp = eval(form.gp647.value);
+	gc = eval(form.gc647.value);
+	gr = eval(form.gr647.value);
+	go = eval(form.go647.value);
+	form.g647.value = ((2*gp + gc)*(gr + go));
+}
+
+function f648(form)
+{
+	b = eval(form.b648.value);
+	s = eval(form.S648.value);
+	i = eval(form.I648.value);
+	y = eval(form.y648.value);
+	form.g648.value = (b*s*i*y);
+}
+
+function f649(form)
+{
+	h = eval(form.h649.value);
+	s = eval(form.S649.value);
+	i = eval(form.I649.value);
+	y = eval(form.y649.value);
+	form.g649.value = (h*s*i*y);
+}
+
+function vf6100(form)
+{
+	f4 = eval(form.F4H6100.value);
+	f3 = eval(form.F3H6100.value);
+	f2 = eval(form.F2H6100.value);
+	f1 = eval(form.F1H6100.value);
+	I = eval(form.I6100.value);
+	d = eval(form.d6100.value);
+	c = eval(form.c6100.value);
+	b = eval(form.b6100.value);
+	a = eval(form.a6100.value);
+	rh = eval(form.RH6100.value);
+	form.S6100.value = (f4*(I - d)+f3*(I - c)-f2*(I - b)+f1*(I - a)*rh*I);
+}
+
+function vf6270(form)
+{
+	t = eval(form.T6270.value);
+	b = eval(form.b6270.value);
+	k = eval(form.K6270.value);
+	form.tau6270.value = ((t)/(2*b*k));
+}
+
+function vf6271(form)
+{
+	t = eval(form.T6271.value);
+	b = eval(form.b6271.value);
+	r = eval(form.R6271.value);
+	form.Z6271.value = ((t)/(2*b*r));
+}
+
+function vf6610(form)
+{
+	r = eval(form.R6610.value);
+	a = eval(form.a6610.value);
+	form.M6610.value = (r*a);
+}
+
+function vf6611(form)
+{
+	r = eval(form.R6611.value);
+	a = eval(form.a6611.value);
+	b = eval(form.b6611.value);
+	f = eval(form.F6611.value);
+	form.M6611.value = ((r*b) - (f*(b - a)));
+}
+
+function vf6612(form)
+{
+	r = eval(form.R6612.value);
+	a = eval(form.a6612.value);
+	b = eval(form.b6612.value);
+	c = eval(form.c6612.value);
+	f = eval(form.F6612.value);
+	ff = eval(form.Ff6612.value);
+	form.M6612.value = ((r*c) - (f*(c - a)) - (ff*(c - b)));
+}
+
+function vf6613(form)
+{
+	r = eval(form.R6613.value);
+	i = eval(form.I6613.value);
+	d = eval(form.d6613.value);
+	form.M6613.value = (r*(i - d));
+}
+
+function vf6710(form)
+{
+	r = eval(form.r6710.value);
+	f = eval(form.f6710.value);
+	form.q6710.value = (r - f);
+}
+
+function vf6711(form)
+{
+	r = eval(form.r6711.value);
+	f = eval(form.f6711.value);
+	ff = eval(form.ff6711.value);
+	form.q6711.value = (r - f - ff);
+}
+
+function vf6712(form)
+{
+	r = eval(form.r6712.value);
+	f = eval(form.f6712.value);
+	ff = eval(form.ff6712.value);
+	fff = eval(form.fff6712.value);
+	form.q6712.value = (r - f - ff + fff);
+}
+
+function vf6151(form)
+{
+	h = eval(form.h6151.value);
+	form.b6151.value = (((1/3) - (1/5))*h);
+}
+
+function vf6152(form)
+{
+	a = eval(form.a6152.value);
+	b = eval(form.b6152.value);
+	form.s6152.value = (a/b);
+}
+
+function vf6153(form)
+{
+	b = eval(form.b6153.value);
+	s = eval(form.s6153.value);
+	form.a6153.value = (b*s);
+}
+
+function vf6190(form)
+{
+	h = eval(form.h6190.value);
+	a = eval(form.a6190.value);
+	form.s6190.value = (h*a);
+}
+
+function vf6320(form)
+{
+	a = eval(form.A6320.value);
+	s = eval(form.S6320.value);
+	form.b6320.value = (a/s);
+}
+
+function f6410(form)
+{
+	p = eval(form.p6410.value);
+	h = eval(form.h6410.value);
+	b = eval(form.b6410.value);
+	s = eval(form.s6410.value);
+	y = eval(form.y6410.value);
+	form.g6410.value = (p*h*b*s*y);
+}
+
+function f6411(form)
+{
+	p = eval(form.p6411.value);
+	h = eval(form.h6411.value);
+	b = eval(form.b6411.value);
+	s = eval(form.s6411.value);
+	y = eval(form.y6411.value);
+	g = eval(form.g6411.value);
+	form.gg6411.value = (g*p*h*b*s*y);
+}
 //////////
