@@ -9118,13 +9118,13 @@ font-family:&quot;Times New Roman&quot;,serif;position:relative;top:16.0pt" lang
 	<a class="close" href="#">Закрыть</a>
 	<h2>Расчёт формулы</h2>
 	<form method="post" action="">
-		<label>Трудоемкость программы: </label>
+		<label>Норма штучного времени: </label>
 		<input name="a">
-		<label>Деств. фонд времени: </label>
+		<label>Годовая программа: </label>
 		<input name="b">
-		<label>Коэффициент выполнения: </label>
-		<input name="с">				
-		<label>Количество оборудования: </label>
+		<label>Годовая программа: </label>
+		<input name="c">				
+		<label>Общая трудоемкость: </label>
 		<input name="Ce">	
 		<input value="Рассчитать" onclick="af88(this.form)" type="button">
 		<input value="Сброс" type="reset">
@@ -9845,12 +9845,11 @@ text-align:center;line-height:150%" align="center"><span style="position:relativ
 	<form method="post" action="">
 		<label>Часовой расход: </label>
 		<input name="a">
-		<label>Число единиц оборудования: </label>
+		<label>Число ед. оборудования: </label>
 		<input name="b">
 		<label>Количество пневмоцилиндров: </label>
-		<input name="c">>				
-				
-		<label>Расход сжатого воздуха : </label>
+		<input name="c">				
+		<label>Расход сжатого воздуха: </label>
 		<input name="Ce">	
 		<input value="Рассчитать" onclick="af101(this.form)" type="button">
 		<input value="Сброс" type="reset">
@@ -10044,7 +10043,24 @@ line-height:150%" align="center"><span style="font-size:14.0pt;line-height:150%;
 14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.102)</span></p>
+ (1.102)
+ <a class="show_popup" rel="af102" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af102">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Скорость движения воздуха: </label>
+		<input name="a">
+		<label>Площадь сечения воздуховода: </label>
+		<input name="b">
+						
+		<label>Часовой объем вытяжки: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af102(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
@@ -10094,7 +10110,24 @@ margin-left:212.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:.05pt;
 line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:
 &quot;Times New Roman&quot;,serif;position:relative;top:3.0pt"><img src="index_files/image193.png" height="23" width="64"></span><span style="font-size:
 14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.104)</span></p>
+ (1.104)
+  <a class="show_popup" rel="af104" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af104">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Коэффициент: </label>
+		<input name="a">
+		<label>Сила сварочного тока: </label>
+		<input name="b">
+						
+		<label>Количество удаляемого воздуха: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af104(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
@@ -10388,7 +10421,28 @@ justify"><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,s
 margin-bottom:0cm;margin-left:70.75pt;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif;position:relative;
 top:15.0pt"><img src="index_files/image195.png" height="47" width="83"></span><span style="font-size:
 14.0pt;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.105)</span></p>
+ (1.105)
+  <a class="show_popup" rel="af105" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af105">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Средняя освещенность: </label>
+		<input name="a">
+		<label>Площадь освещения: </label>
+		<input name="b">
+		<label>Световой поток лампы: </label>
+		<input name="c">
+		<label>Коэф. использования св. потока: </label>
+		<input name="d">
+						
+		<label>Число ламп: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af105(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
@@ -10425,8 +10479,26 @@ margin-bottom:0cm;margin-left:106.15pt;margin-bottom:.0001pt;text-align:center;
 line-height:150%" align="center"><span style="font-size:14.0pt;line-height:150%;
 font-family:&quot;Times New Roman&quot;,serif;position:relative;top:16.0pt" lang="BE"><img src="index_files/image196.png" height="47" width="105"></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif" lang="BE">,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.106)</span></p>
-
+ (1.106)
+ <a class="show_popup" rel="af106" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af106">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Ширина помещения: </label>
+		<input name="a">
+		<label>Длина помещения: </label>
+		<input name="b">
+		<label>Высота светильников: </label>
+		<input name="c">
+								
+		<label>Показатель помещения: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af106(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:
 150%;font-family:&quot;Times New Roman&quot;,serif" lang="BE">где і</span><span style="font-size:
@@ -10950,7 +11022,26 @@ font-family:&quot;Times New Roman&quot;,serif">Ток замыкания на з
 margin-bottom:0cm;margin-left:106.15pt;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif;position:relative;
 top:12.0pt"><img src="index_files/image206.png" height="41" width="177"></span><span style="font-size:
 14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp; (1.107)</span></p>
+ &nbsp;&nbsp;&nbsp; (1.107)
+ <a class="show_popup" rel="af107" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af107">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Линейное напряжение: </label>
+		<input name="a">
+		<label>Длина кабельных линий (км): </label>
+		<input name="b">
+		<label>Длина воздушных линий (км): </label>
+		<input name="c">
+								
+		<label>Номинальный ток: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af107(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal"><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">где
 </span><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif" lang="EN-US">U</span></i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif"> – линейное
@@ -11014,7 +11105,28 @@ top:14.0pt"><img src="index_files/image219.png" height="45" width="233"></span><
 14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.108)</span></p>
+ (1.108)
+ <a class="show_popup" rel="af108" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af108">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Удельное сопротивление грунта: </label>
+		<input name="a">
+		<label>Длина: </label>
+		<input name="b">
+		<label>Диаметр: </label>
+		<input name="c">
+		<label>Глубина </label>
+		<input name="d">
+								
+		<label>Сопротивление: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af108(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:35.4pt;margin-bottom:.0001pt;text-align:justify;text-indent:.05pt;
@@ -11038,7 +11150,29 @@ top:15.0pt"><img src="index_files/image221.png" height="48" width="157"></span><
 14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.109)</span></p>
+ (1.109)
+
+  <a class="show_popup" rel="af109" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af109">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Удельное сопротивление грунта: </label>
+		<input name="a">
+		<label>Длина: </label>
+		<input name="b">
+		<label>Диаметр: </label>
+		<input name="c">
+		<label>Глубина </label>
+		<input name="d">
+								
+		<label>Сопротивление: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af109(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="text-align:justify"><span style="font-size:14.0pt;
 font-family:&quot;Times New Roman&quot;,serif">где </span><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif" lang="EN-US">l</span></i><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">, </span></i><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif" lang="EN-US">b</span></i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif"> и <span style="position:relative;top:6.0pt"><img src="index_files/image222.png" height="24" width="24"></span>&nbsp;- длина, ширина и
@@ -11077,7 +11211,28 @@ font-family:&quot;Times New Roman&quot;,serif">- для вертикальных
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;
 margin-bottom:0cm;margin-left:106.15pt;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif;position:relative;
 top:15.0pt"><img src="index_files/image225.png" height="47" width="97"></span><span style="font-size:
-14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.110)</span></p>
+14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.110)
+
+  <a class="show_popup" rel="af110" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af110">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Общее сопротивление: </label>
+		<input name="a">
+		<label>Сопротивление: </label>
+		<input name="b">
+		<label>Коэффициент: </label>
+		<input name="c">
+
+								
+		<label>Количество заземлителей: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af110(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:35.4pt;margin-bottom:.0001pt;text-align:justify;text-indent:.05pt;
@@ -11093,7 +11248,27 @@ font-family:&quot;Times New Roman&quot;,serif">- для горизонтальн
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;
 margin-bottom:0cm;margin-left:106.15pt;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif;position:relative;
 top:15.0pt"><img src="index_files/image227.png" height="47" width="99"></span><span style="font-size:
-14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.111)</span></p>
+14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.111)
+  <a class="show_popup" rel="af111" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af111">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Общее сопротивление: </label>
+		<input name="a">
+		<label>Сопротивление: </label>
+		<input name="b">
+		<label>Коэффициент: </label>
+		<input name="c">
+
+								
+		<label>Количество заземлителей: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af111(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-left:35.4pt;text-indent:.05pt"><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">где <span style="position:relative;top:5.0pt"><img src="index_files/image228.png" height="23" width="21"></span>&nbsp;- коэффициент
 использования уложенных полос, определяемый из таблицы 4.25.</span></p>
@@ -11106,7 +11281,28 @@ font-family:&quot;Times New Roman&quot;,serif">6. Определить сопр�
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;
 margin-bottom:0cm;margin-left:106.15pt;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif;position:relative;
 top:15.0pt"><img src="index_files/image229.png" height="48" width="185"></span><span style="font-size:
-14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.112)</span></p>
+14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.112)
+<a class="show_popup" rel="af112" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af112">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Удельное сопротивление грунта: </label>
+		<input name="a">
+		<label>Длина: </label>
+		<input name="b">
+		<label>Диаметр: </label>
+		<input name="c">
+		<label>Глубина </label>
+		<input name="d">
+								
+		<label>Сопротивление: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af112(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
@@ -11141,7 +11337,30 @@ margin-left:106.15pt;margin-bottom:.0001pt;text-align:justify;line-height:150%">
 position:relative;top:16.0pt"><img src="index_files/image232.png" height="47" width="245"></span><span style="font-size:
 14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1.113)</span></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1.113)
+<a class="show_popup" rel="af113" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af113">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Сопротивление ОБ: </label>
+		<input name="a">
+		<label>Сопротивление ПОЛ: </label>
+		<input name="b">
+		<label>Коэф. использ. соед. полосы: </label>
+		<input name="c">
+		<label>Коэф. использ. заземлителей: </label>
+		<input name="d">
+		<label>Количество n: </label>
+		<input name="e">
+								
+		<label>Сопротивление ОБЩ: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af113(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:35.4pt;margin-bottom:.0001pt;text-align:justify;text-indent:.05pt;
@@ -12597,7 +12816,27 @@ font-family:&quot;Times New Roman&quot;,serif">Материальные затр
 margin-bottom:0cm;margin-left:106.15pt;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif;position:relative;
 top:3.0pt"><img src="index_files/image238.png" height="17" width="151"></span><span style="font-size:
 14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.114)</span></p>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.114)
+ <a class="show_popup" rel="af114" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af114">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Стоимость осн. материалов: </label>
+		<input name="a">
+		<label>Стоимость вспм. материалов: </label>
+		<input name="b">
+		<label>Стоимость энергоресурсов: </label>
+		<input name="c">
+
+								
+		<label>Материальные затраты: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af114(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
@@ -12630,7 +12869,31 @@ line-height:150%;font-family:&quot;Times New Roman&quot;,serif"> учетом
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:141.55pt;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
 position:relative;top:6.0pt"><img src="index_files/image239.png" height="24" width="236"></span><span style="font-size:
-14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.115)</span></p>
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.115)
+ <a class="show_popup" rel="af115" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af115">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Цена металла: </label>
+		<input name="a">
+		<label>Цена свар. проволоки: </label>
+		<input name="b">
+		<label>Масса заготовки: </label>
+		<input name="c">
+		<label>Норма расхода проволоки: </label>
+		<input name="d">
+		<label>Коэффициент транспорт: </label>
+		<input name="e">
+
+								
+		<label>Стоимость осн. материалов: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af115(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:35.4pt;margin-bottom:.0001pt;text-align:justify;text-indent:.05pt;
@@ -12677,7 +12940,30 @@ font-family:&quot;Times New Roman&quot;,serif">К числу вспомогат�
 margin-left:141.55pt;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
 position:relative;top:14.0pt"><img src="index_files/image241.png" height="45" width="200"></span><span style="font-size:
 14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.116)</span></p>
+ (1.116)
+  <a class="show_popup" rel="af116" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af116">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Цена вспомогательных мат.: </label>
+		<input name="a">
+		<label>Норма расхода: </label>
+		<input name="b">
+		<label>Количество операций: </label>
+		<input name="c">		
+		<label>Коэффициент транспорт: </label>
+		<input name="e">
+
+								
+		<label>Стоимость вспомог. материалов: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af116(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
+
 
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:35.4pt;margin-bottom:.0001pt;text-align:justify;text-indent:.05pt;
@@ -12712,7 +12998,24 @@ font-family:&quot;Times New Roman&quot;,serif">Статья «Топливо и 
 margin-left:176.95pt;margin-bottom:.0001pt;text-align:justify;line-height:150%"><sup><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
 position:relative;top:6.0pt"><img src="index_files/image242.png" height="24" width="109"></span></sup><sup><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,</span></sup><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.117)</span></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.117)
+ <a class="show_popup" rel="af117" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af117">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Стоимость энергии: </label>
+		<input name="a">
+		<label>Стоимость сжатого воздуха: </label>
+		<input name="b">
+										
+		<label>Затраты энергии: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af117(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:35.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:0cm;
@@ -12737,7 +13040,24 @@ font-family:&quot;Times New Roman&quot;,serif">Затраты электроэн
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:176.95pt;margin-bottom:.0001pt;text-align:justify;line-height:150%"><sup><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
 position:relative;top:6.0pt"><img src="index_files/image243.png" height="24" width="99"></span></sup><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.118)</span></p>
+ (1.118)
+ <a class="show_popup" rel="af118" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af118">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Тариф: </label>
+		<input name="a">
+		<label>Норма расхода: </label>
+		<input name="b">
+										
+		<label>Затраты энергии: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af118(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
@@ -12763,7 +13083,29 @@ font-family:&quot;Times New Roman&quot;,serif">Затраты на сжатый 
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:141.55pt;margin-bottom:.0001pt;text-align:justify;line-height:150%"><sup><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
 position:relative;top:11.0pt"><img src="index_files/image245.png" height="44" width="142"></span></sup><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.119)</span></p>
+ (1.119)
+ <a class="show_popup" rel="af119" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af119">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Цена одного метра: </label>
+		<input name="a">
+		<label>Потребность: </label>
+		<input name="b">
+		<label>Годовая программа: </label>
+		<input name="c">
+		<label>Количество изготавл. деталей: </label>
+		<input name="d">
+										
+		<label>Затраты на сжат. воздух: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af119(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
+
 
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
@@ -12828,7 +13170,24 @@ font-family:&quot;Times New Roman&quot;,serif">Она рассчитываетс
 margin-bottom:0cm;margin-left:70.75pt;margin-bottom:.0001pt;text-align:center;
 line-height:150%" align="center"><sup><span style="font-size:14.0pt;line-height:150%;
 font-family:&quot;Times New Roman&quot;,serif;position:relative;top:3.0pt"><img src="index_files/image250.png" height="17" width="149"></span></sup><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.120)</span></p>
+ (1.120)
+  <a class="show_popup" rel="af118" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af118">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Основная ЗП: </label>
+		<input name="a">
+		<label>Дополнительная ЗП: </label>
+		<input name="b">
+										
+		<label>ЗП: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af118(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
@@ -12860,8 +13219,26 @@ font-family:&quot;Times New Roman&quot;,serif">Основная заработн
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:106.15pt;margin-bottom:.0001pt;text-align:justify;line-height:150%"><sup><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
 position:relative;top:14.0pt"><img src="index_files/image254.png" height="42" width="168"></span></sup><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.121)</span></p>
-
+ (1.121)
+ <a class="show_popup" rel="af121" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af121">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Суммарная расценка: </label>
+		<input name="a">
+		<label>Коэффициент премирования: </label>
+		<input name="b">
+		<label>Доплата за вредные условия: </label>
+		<input name="c">
+										
+		<label>Основная ЗП: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af121(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
 font-family:&quot;Times New Roman&quot;,serif">где </span><span style="position:relative;
@@ -12894,7 +13271,27 @@ font-family:&quot;Times New Roman&quot;,serif">Сдельная расценка
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
 text-align:center;line-height:150%" align="center"><span style="font-size:14.0pt;line-height:
 150%;font-family:&quot;Times New Roman&quot;,serif;position:relative;top:14.0pt"><img src="index_files/image260.png" height="41" width="171"></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.122)</span></p>
+ (1.122)
+  <a class="show_popup" rel="af122" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af122">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Часовая тарифная ставка: </label>
+		<input name="a">
+		<label>m: </label>
+		<input name="b">
+		<label>Норма штучного времени: </label>
+		<input name="c">
+										
+		<label>Сдельная расценка: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af122(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
+
 
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:35.4pt;margin-bottom:.0001pt;text-align:justify;text-indent:.05pt;
@@ -13068,7 +13465,26 @@ margin-bottom:0cm;margin-left:176.95pt;margin-bottom:.0001pt;text-align:center;
 line-height:150%" align="center"><span style="font-size:14.0pt;line-height:150%;font-family:
 &quot;Times New Roman&quot;,serif;position:relative;top:5.0pt"><img src="index_files/image265.png" height="17" width="101"></span><span style="font-size:
 14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.124)</span></p>
+ (1.124)
+
+   <a class="show_popup" rel="af124" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af124">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Основная ЗП: </label>
+		<input name="a">
+		<label>Коэффициент: </label>
+		<input name="b">
+		
+										
+		<label>Выплаты: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af124(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
 margin-left:35.4pt;margin-bottom:.0001pt;text-align:justify;text-indent:.05pt;
@@ -13101,7 +13517,26 @@ margin-bottom:0cm;margin-left:106.15pt;margin-bottom:.0001pt;text-align:center;
 line-height:150%" align="center"><span style="font-size:14.0pt;line-height:150%;font-family:
 &quot;Times New Roman&quot;,serif;position:relative;top:12.0pt"><img src="index_files/image268.png" height="40" width="112"></span><span style="font-size:
 14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- (1.125)</span></p>
+ (1.125)
+
+    <a class="show_popup" rel="af125" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af125">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Норматив отчислений: </label>
+		<input name="a">
+		<label>ЗП: </label>
+		<input name="b">
+		
+										
+		<label>Отчисления: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af125(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
@@ -13129,7 +13564,26 @@ font-family:&quot;Times New Roman&quot;,serif">Отчисления в госу�
 margin-left:176.95pt;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
 position:relative;top:18.0pt"><img src="index_files/image272.png" height="40" width="122"></span><span style="font-size:
 14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-(1.126)</span></p>
+(1.126)
+
+ <a class="show_popup" rel="af126" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af126">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Норматив отчислений: </label>
+		<input name="a">
+		<label>ЗП: </label>
+		<input name="b">
+		
+										
+		<label>Отчисления: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af126(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
@@ -13155,7 +13609,26 @@ margin-left:212.35pt;margin-bottom:.0001pt;text-align:justify;line-height:150%">
 position:relative;top:18.0pt"><img src="index_files/image274.png" height="40" width="88"></span><span style="font-size:
 14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.127)</span></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1.127)
+
+ <a class="show_popup" rel="af127" href="#"> Рассчитать</a>
+</span></p>
+<div class="popup af127">
+	<a class="close" href="#">Закрыть</a>
+	<h2>Расчёт формулы</h2>
+	<form method="post" action="">
+		<label>Ставка чрезвычайного налога: </label>
+		<input name="a">
+		<label>ЗП: </label>
+		<input name="b">
+		
+										
+		<label>Чрезвычайный налог: </label>
+		<input name="Ce">	
+		<input value="Рассчитать" onclick="af127(this.form)" type="button">
+		<input value="Сброс" type="reset">
+	</form>
+</div>
 
 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
 justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
