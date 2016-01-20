@@ -622,4 +622,12 @@ function f645(form)
 	form.Sig645.value = (N/Aw);
 }
 
+function vf61(form)
+{
+	g = eval(form.g61.value);
+	c = eval(form.c61.value);
+	fh = eval(form.FH61.value);
+	form.FP61.value = ((g*c)*fh);
+}
+
 //////////
