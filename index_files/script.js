@@ -756,14 +756,6 @@ function af87(form)
 	form.Ce.value = (m*a)/60;
 }
 
-function af88(form)
-{
-	a = eval(form.a.value);
-	b = eval(form.b.value);
-	d = eval(form.D.value);
-			
-	form.E.value = a/(b*d);
-}
 
 function af89(form)
 {
