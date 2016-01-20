@@ -1182,7 +1182,7 @@ function vf625(form)
 function vf626(form)
 {
 	t = eval(form.T626.value);
-	a = eval(form.A625.value);
+	a = eval(form.A626.value);
 	form.tau626.value = (t/a);
 }
 
